@@ -1,8 +1,12 @@
 # code your #valid_move? method here
 
 def valid_move?(input)
-  if(input-1
-  
+  if((input-1).between(0,8))
+    if position_taken()
+      return true
+    end
+  end
+  return false
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? 
